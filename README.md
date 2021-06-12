@@ -1,5 +1,5 @@
 Link to the web app:-
-### https://covid-19-tracker-58457.web.app/
+### `https://covid-19-tracker-58457.web.app/`
 
 This app is inspired from CrazyProgrammer's COVID19 Tracker Project on YT.
 A few extra graphs have been added for better visualization.
@@ -8,7 +8,7 @@ The app is not complete yet, as a few more features are yet to be added.
 This app was built using React JS
 
 
-### DISCLAIMER: 
+### `DISCLAIMER`
 ## The app might break down or may not give the right results for certain COUNTRIES due to lack of 'DATA' OR 'CONFIRMED CASES'.
 
 # Getting Started with Create React App
