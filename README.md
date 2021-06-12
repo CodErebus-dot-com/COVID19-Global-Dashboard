@@ -1,14 +1,11 @@
-## Link to the web app: https://covid-19-tracker-58457.web.app/
+Link to the web app:-
+### https://covid-19-tracker-58457.web.app/
 
-## This app is inspired from CrazyProgrammer's COVID19 Tracker Project on YT.
-
-## A few extra graphs have been added for better visualization.
-
-## The code is definitely not optimized and so there will be a litte lag here and there.
-
-## The app is not complete yet, as a few more features are yet to be added.
-
-## This app was built using React JS
+This app is inspired from CrazyProgrammer's COVID19 Tracker Project on YT.
+A few extra graphs have been added for better visualization.
+The code is definitely not optimized and so there will be a litte lag here and there.
+The app is not complete yet, as a few more features are yet to be added.
+This app was built using React JS
 
 
 ### DISCLAIMER: 
