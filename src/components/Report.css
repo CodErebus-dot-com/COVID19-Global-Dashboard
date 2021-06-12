@@ -1,0 +1,55 @@
+table {
+  border-collapse: collapse;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  /* border-radius: 100px; */
+  background: white;
+}
+
+tr {
+  width: 100%;
+}
+tr:hover {
+  background-color: #f5f5f5;
+}
+th,
+td {
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltipText {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  border: 1px;
+  border-radius: 5px;
+  background-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  padding: 3px;
+  color: white;
+  padding: 5px;
+  top: 75%;
+  left: 0%;
+}
+
+.tooltip:hover span.tooltipText {
+  display: block;
+}
+
+.tooltipText::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  bottom: 100%;
+  left: 50%;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}

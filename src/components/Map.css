@@ -1,0 +1,79 @@
+.map {
+  height: 750px;
+  /* flex: 0.6; */
+  /* background-color: red; */
+  /* padding: 1rem; */
+  border-radius: 20px;
+  /* margin-top: 30px; */
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  /* max-width: 1200px; */
+}
+
+.info-container .info-flag {
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.info-container {
+  text-align: center;
+  width: 200px;
+}
+
+.info-confirmed,
+.info-deaths,
+.info-recovered,
+.info-active {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.info-name {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  color: #555;
+}
+
+.total {
+  color: #cc1034;
+}
+.active {
+  /* color: #cc1034; */
+  color: #3457d5;
+}
+.active__today {
+  color: #3457d5;
+  filter: brightness(70%);
+}
+
+.recovered {
+  color: #7dd71d;
+}
+.recovered__today {
+  color: #7dd71d;
+  filter: brightness(70%);
+}
+
+.deaths {
+  color: #555;
+}
+.deaths__today {
+  color: #c0c0c0;
+  filter: brightness(70%);
+}
+
+.active__today,
+.deaths__today,
+.recovered__today {
+  font-size: 16px;
+}
+
+.active__text,
+.total__text,
+.recovered__text,
+.deaths__text {
+  font-size: 16px;
+}

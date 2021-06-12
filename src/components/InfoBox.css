@@ -1,0 +1,82 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.infoBox {
+  flex: 0.4;
+  cursor: pointer;
+  box-shadow: 7px 7px 7px 0px rgba(0, 0, 0, 0.7) !important;
+  -webkit-box-shadow: 7px 7px 7px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 7px 7px 7px 0px rgba(0, 0, 0, 0.7);
+}
+
+.infoBox:not(:last-child) {
+  margin-right: 30px;
+}
+
+.infoContent {
+  text-align: center;
+  /* transition: 0.5s ease-in-out; */
+}
+
+.infoBox--selected {
+  border-bottom: 10px solid #32cd32;
+}
+
+.infoBox--red {
+  border-color: #cc1034;
+}
+
+.infoBox--grey {
+  border-color: grey;
+}
+
+.infoBox__cases {
+  color: rgba(204, 16, 52, 0.8);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+.infoBox__cases--green,
+.infoBox__total--green,
+.infoBox__title--green {
+  color: #32cd32 !important;
+}
+
+.infoBox__cases--green {
+  color: rgb(50, 205, 50, 0.8) !important;
+}
+
+.infoBox__cases--grey,
+.infoBox__total--grey,
+.infoBox__title--grey {
+  color: grey !important;
+}
+
+.infoBox__cases--grey {
+  color: rgb(128, 128, 128, 0.8) !important;
+}
+
+.infoBox__total {
+  color: #cc1034;
+  font-weight: 700 !important;
+  font-size: 1.8rem !important;
+  margin-top: 5px !important;
+}
+
+.infoBox__title {
+  color: #cc1034;
+  font-weight: 600 !important;
+}
+
+.infoBox:hover {
+  background: rgba(144, 238, 144, 0.3);
+}
+.infoBox--red:hover {
+  background: rgba(204, 16, 52, 0.1);
+}
+.infoBox--grey:hover {
+  background: rgba(211, 211, 211, 0.4);
+}
+
+.trend {
+  margin-top: 3rem;
+}
