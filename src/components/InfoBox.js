@@ -3,16 +3,7 @@ import {Card, CardContent, Typography} from '@material-ui/core'
 import CountUp from 'react-countup'
 import Trend from 'react-trend'
 import "./InfoBox.css"
-import { css } from "@emotion/react";
-import GridLoader from "react-spinners/GridLoader";
-
-const override = css`
-  position: relative;
-  top: 50%;
-  left: 0;
-  right: 0;
-  margin: auto;
-`;
+// import { css } from "@emotion/react";
 
 const InfoBox = ({title, cases, total, active, isRed, isGrey, country,...props}) => {
     

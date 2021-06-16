@@ -32,7 +32,7 @@ const override = css`
 `;
 
 const App = () => {
-  const classes = useStyles();
+  const styles = useStyles();
 
 
   const [countries, setCountries] = useState([]);
@@ -211,11 +211,11 @@ const App = () => {
               {/* Graphs */}
               <div className="app__graph">
                 <h1 style={{color: "#6c757d", display: "flex", justifyContent: "center"}}>Spread Trends</h1>
-                <div className={classes.switcher}>
+                <div className={styles.switcher}>
                   <Button className="button--switch" variant="contained" default color="primary" onClick={() => setVariantSwitch("cummulative")} >Cummulative</Button>
                   <Button className="button--switch" variant="contained" color="secondary" onClick={() => setVariantSwitch("daily")} >Daily</Button>
                 </div>
-                {vaccineInfo.length,country.length && spreadTrendVariant}
+                {(vaccineInfo.length || country.length) && spreadTrendVariant}
               </div>
     
             </div>

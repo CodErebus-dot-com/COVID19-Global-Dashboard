@@ -39,9 +39,11 @@ const Report = ({countryInfo, country, vaccineDaily, vaccineTotal}) => {
     setExpanded(isExpanded ? panel : false);
   };
   
+  
+
   return (
     <>
-      <div className={classes.root}>
+      <div className={classes.root} >
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -54,49 +56,54 @@ const Report = ({countryInfo, country, vaccineDaily, vaccineTotal}) => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails >
-            <Typography className={classes.content}>
+            <Typography className={classes.content} component={'span'}>
               {/* <div className="table__report"> */}
                 <table>
-                  <tr>
-                    <th>Confirmed</th>
-                    <th>Active</th>
-                    <th>Recovered</th>
-                    <th>Critical</th>
-                    <th>Deceased</th>
-                    <th>Tested</th>
-                    <th>Vaccine doses administered</th>
-                  </tr>
-                  <tr>
-                    <td className="tooltip">
-                      {numeral(countryInfo.cases).format("0.0a")}
-                      <span class="tooltipText">No. of confirmed cases so far</span>
-                    </td>
-                    <td className="tooltip">
-                      {numeral(countryInfo.active).format("0.0a")}
-                      <span class="tooltipText">No. of active cases</span>
-                    </td>
-                    <td className="tooltip">
-                      {numeral(countryInfo.recovered).format("0.0a")}
-                      <span class="tooltipText">No. of recovered cases</span>
-                    </td>
-                    <td className="tooltip">
-                      {numeral(countryInfo.critical).format("0a")}
-                      <span class="tooltipText">No. of critical cases</span>
-                    </td>
-                    <td className="tooltip">
-                      {numeral(countryInfo.deaths).format("0.0a")}
-                      <span class="tooltipText">No. of deceased cases</span>
-                    </td>
-                    <td className="tooltip">
-                      {numeral(countryInfo.tests).format("0.0a")}
-                      <span class="tooltipText">No. of people tested so far</span>
-                    </td>
-                    <td className="tooltip">
-                      {numeral(vaccineTotal).format("0.0a")}
-                      <span class="tooltipText">No. of vaccine doses administered so far</span>
-                    </td>
-                    {/* <td>N.A.</td> */}
-                  </tr>                
+                  <thead>
+                    <tr>
+                      <th>Confirmed</th>
+                      <th>Active</th>
+                      <th>Recovered</th>
+                      <th>Critical</th>
+                      <th>Deceased</th>
+                      <th>Tested</th>
+                      <th>Vaccine doses administered</th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody>
+                    <tr>
+                      <td className="tooltip">
+                        {numeral(countryInfo.cases).format("0.0a")}
+                        <span class="tooltipText">No. of confirmed cases so far</span>
+                      </td>
+                      <td className="tooltip">
+                        {numeral(countryInfo.active).format("0.0a")}
+                        <span class="tooltipText">No. of active cases</span>
+                      </td>
+                      <td className="tooltip">
+                        {numeral(countryInfo.recovered).format("0.0a")}
+                        <span class="tooltipText">No. of recovered cases</span>
+                      </td>
+                      <td className="tooltip">
+                        {numeral(countryInfo.critical).format("0a")}
+                        <span class="tooltipText">No. of critical cases</span>
+                      </td>
+                      <td className="tooltip">
+                        {numeral(countryInfo.deaths).format("0.0a")}
+                        <span class="tooltipText">No. of deceased cases</span>
+                      </td>
+                      <td className="tooltip">
+                        {numeral(countryInfo.tests).format("0.0a")}
+                        <span class="tooltipText">No. of people tested so far</span>
+                      </td>
+                      <td className="tooltip">
+                        {numeral(vaccineTotal).format("0.0a")}
+                        <span class="tooltipText">No. of vaccine doses administered so far</span>
+                      </td>
+                      {/* <td>N.A.</td> */}
+                    </tr>                
+                  </tbody>
                 </table>
 
               {/* </div> */}
@@ -115,50 +122,54 @@ const Report = ({countryInfo, country, vaccineDaily, vaccineTotal}) => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className={classes.content}>
+            <Typography className={classes.content} component={'span'}>
               <table>
-                  <tr>
-                    <th>Confirmed</th>
-                    <th>Active</th>
-                    <th>Recovered</th>
-                    <th>Critical Cases</th>
-                    <th>Deceased</th>
-                    <th>Tested</th>
-                    <th>Vaccine doses administered</th>
-                  </tr>
-                  <tr>
-                    <td className="tooltip">
-                      {numeral(countryInfo.todayCases + countryInfo.todayRecovered + countryInfo.todayDeaths).format('0.0a')}
-                      <span class="tooltipText">Total no. of cases today</span>
-                    </td>
-                    <td className="tooltip">
-                      {numeral(countryInfo.todayCases).format('0.0a')}
-                      <span class="tooltipText">No. of infected cases today</span>
-                    </td>
-                    <td className="tooltip">
-                      {numeral(countryInfo.todayRecovered).format('0.0a')}
-                      <span class="tooltipText">No. of recovered cases today</span>
-                    </td>
-                    <td className="tooltip">
-                      {/* {numeral(countryInfo.critical/countryInfo.cases).format('0.0a')}
-                      <span class="tooltipText">% critical out of confirmed</span> */}
-                      N.A.
-                    </td>
-                    <td className="tooltip">
-                      {numeral(countryInfo.todayDeaths).format('0.0a')}
-                      <span class="tooltipText">No. of deceased cases today</span>
-                    </td>
-                    <td className="tooltip">
-                      {/* {numeral(countryInfo.tests/countryInfo.population).format('0.00%')}
-                      <span class="tooltipText">% tested out of total population</span> */}
-                      N.A.
-                    </td>
-                    <td className="tooltip">
-                      {numeral(vaccineDaily).format("0.0a")}
-                      <span class="tooltipText">No. of vaccine doses administered today</span>
-                    </td>
-                    {/* <td>N.A.</td> */}
-                  </tr>                
+                  <thead>
+                    <tr>
+                      <th>Confirmed</th>
+                      <th>Active</th>
+                      <th>Recovered</th>
+                      <th>Critical Cases</th>
+                      <th>Deceased</th>
+                      <th>Tested</th>
+                      <th>Vaccine doses administered</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="tooltip">
+                        {numeral(countryInfo.todayCases + countryInfo.todayRecovered + countryInfo.todayDeaths).format('0.0a')}
+                        <span class="tooltipText">Total no. of cases today</span>
+                      </td>
+                      <td className="tooltip">
+                        {numeral(countryInfo.todayCases).format('0.0a')}
+                        <span class="tooltipText">No. of infected cases today</span>
+                      </td>
+                      <td className="tooltip">
+                        {numeral(countryInfo.todayRecovered).format('0.0a')}
+                        <span class="tooltipText">No. of recovered cases today</span>
+                      </td>
+                      <td className="tooltip">
+                        {/* {numeral(countryInfo.critical/countryInfo.cases).format('0.0a')}
+                        <span class="tooltipText">% critical out of confirmed</span> */}
+                        N.A.
+                      </td>
+                      <td className="tooltip">
+                        {numeral(countryInfo.todayDeaths).format('0.0a')}
+                        <span class="tooltipText">No. of deceased cases today</span>
+                      </td>
+                      <td className="tooltip">
+                        {/* {numeral(countryInfo.tests/countryInfo.population).format('0.00%')}
+                        <span class="tooltipText">% tested out of total population</span> */}
+                        N.A.
+                      </td>
+                      <td className="tooltip">
+                        {numeral(vaccineDaily).format("0.0a")}
+                        <span class="tooltipText">No. of vaccine doses administered today</span>
+                      </td>
+                      {/* <td>N.A.</td> */}
+                    </tr>                
+                  </tbody>
                 </table>
             </Typography>
           </AccordionDetails>
@@ -175,8 +186,9 @@ const Report = ({countryInfo, country, vaccineDaily, vaccineTotal}) => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className={classes.content}>
+            <Typography className={classes.content} component={'span'}>
               <table>
+                <thead>
                   <tr>
                     <th>Confirmed</th>
                     <th>Active</th>
@@ -186,7 +198,9 @@ const Report = ({countryInfo, country, vaccineDaily, vaccineTotal}) => {
                     <th>Tested</th>
                     <th>Vaccine doses administered</th>
                   </tr>
-                  <tr>
+                </thead>
+                <tbody>
+                <tr>
                     <td className="tooltip">
                       {numeral(countryInfo.cases/countryInfo.population).format('0.00%')}
                       <span class="tooltipText">% confirmed out of total population</span>
@@ -217,7 +231,8 @@ const Report = ({countryInfo, country, vaccineDaily, vaccineTotal}) => {
                     </td>
                     {/* <td>N.A.</td> */}
                   </tr>                
-                </table>
+                </tbody>
+              </table>
             </Typography>
           </AccordionDetails>
         </Accordion>

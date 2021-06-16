@@ -126,7 +126,7 @@ function DailySpreadTrends({country}) {
     let chartData = []
     let date, value, value2, value3, value4
     
-    for(let i in xConfirmedData,xRecoveredData, xDeceasedData){
+    for(let i in xConfirmedData){
       date=xConfirmedData[i]
       value=yConfirmedData[i]
       value2=yRecoveredData[i]
@@ -317,7 +317,7 @@ function DailySpreadTrends({country}) {
     let scrollAxis = chart.scrollbarX.scrollbarChart.xAxes.getIndex(0);
     scrollAxis.renderer.grid.template.disabled = true;
 
-    chart = chart;
+    // chart = chart;
     return () => {
       if (chart) {
         chart.dispose();

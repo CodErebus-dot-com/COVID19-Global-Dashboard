@@ -232,7 +232,7 @@ showIndicator();
     let scrollAxis = chart.scrollbarX.scrollbarChart.xAxes.getIndex(0);
     scrollAxis.renderer.grid.template.disabled = true;
 
-    chart = chart;
+    // chart = chart;
     return () => {
       if (chart) {
         chart.dispose();

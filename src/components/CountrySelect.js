@@ -4,6 +4,7 @@ import {Button, Dialog, DialogActions, DialogContent, DialogTitle,
     FormControl, Radio, RadioGroup, FormControlLabel, TextField, Grid} from '@material-ui/core'
 import {Language, SearchRounded} from '@material-ui/icons';
 import CountUp from 'react-countup';
+import {v4 as uuidv4} from 'uuid'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -71,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 const CountrySelect = ({country, onCountryChange, data, casesType, name}) => {
     
 
-    const classes = useStyles();
+    const styleClasses = useStyles();
     const [open, setOpen] = useState(false);
     const [countryInput, setCountryInput] = useState("")
     const [flag, setFlag] = useState("")
@@ -121,18 +122,17 @@ const CountrySelect = ({country, onCountryChange, data, casesType, name}) => {
     }
     for(let i in results){
     countryInput.length>0 ? (
-        countryNames.push(<span>
+        countryNames.push(<span key={uuidv4}>
         
             <div>
                 <FormControlLabel 
-                    className={classes.country__label} 
-                    key={i} value={results[i].country} 
+                    value={results[i].country} 
                     control={<Radio/>} 
                     label={<span style={{ fontSize: 20 }}>{results[i].country}</span>}
                 />
                 
-                <img src={results[i].flag} alt="country-flag" className={classes.country__flag}/>
-                <span className={classes.country__cases}>
+                <img src={results[i].flag} alt="country-flag" className={styleClasses.country__flag}/>
+                <span className={styleClasses.country__cases} key={i}>
                     <span style={{color: "#CC1034"}}>
                         <CountUp
                             start={0}
@@ -146,18 +146,17 @@ const CountrySelect = ({country, onCountryChange, data, casesType, name}) => {
             </div>
         </span>)
     ) : (
-        countryNames.push(<span>
+        countryNames.push(<span key={uuidv4}>
         
             <div>
-                <FormControlLabel 
-                    className={classes.country__label} 
-                    key={i} value={countries[i].country} 
+                <FormControlLabel  
+                    value={countries[i].country} 
                     control={<Radio/>} 
                     label={<span style={{ fontSize: 20 }}>{countries[i].country}</span>}
                 />
                 
-                <img src={countries[i].flag} alt="country-flag" className={classes.country__flag}/>
-                <span className={classes.country__cases}>
+                <img src={countries[i].flag} alt="country-flag" className={styleClasses.country__flag}/>
+                <span className={styleClasses.country__cases}>
                     <span style={{color: "#CC1034"}}>
                         <CountUp
                             start={0}
@@ -187,8 +186,8 @@ const CountrySelect = ({country, onCountryChange, data, casesType, name}) => {
 
     return (
         <>
-            <Button className={classes.country__header} variant="contained" onClick={handleClickOpen}>
-                {country === "worldwide" ? <Language fontSize="large"/> : <img src={flag} height="30px" width="50px"/>}
+            <Button className={styleClasses.country__header} variant="contained" onClick={handleClickOpen}>
+                {country === "worldwide" ? <Language fontSize="large"/> : <img src={flag} height="30px" width="50px" alt="Country Flag"/>}
                 
                 {
                     casesType === "cases" ? <span style={{color: "#CC1034", fontSize: "40px"}}>
@@ -203,25 +202,24 @@ const CountrySelect = ({country, onCountryChange, data, casesType, name}) => {
             <Dialog open={open} onClose={handleClose}>
                 <DialogTitle>Selected: {countryInput ? countryInput : country}</DialogTitle>
                 <DialogContent>
-                    <form className={classes.container}>
-                        <FormControl className={classes.formControl} component="fieldset">
-                            <RadioGroup className={classes.country__radio} aria-label="gender" name="gender1" value={country} onChange={onCountryChange}>
+                    <form className={styleClasses.container}>
+                        <FormControl className={styleClasses.formControl} component="fieldset">
+                            <RadioGroup className={styleClasses.country__radio} aria-label="gender" name="gender1" value={country} onChange={onCountryChange}>
                                 <Grid container alignItems="flex-end">
                                     <Grid item>
-                                        <SearchRounded className={classes.search__icon}/>
+                                        <SearchRounded className={styleClasses.search__icon}/>
                                     </Grid>
                                     <Grid item>
                                         <TextField id="standard-basic" label="Search..." onChange={handleCountryInputChange}/>
                                     </Grid>
                                 </Grid>    
-                                <span className={classes.worldwide__cases}>
+                                <span className={styleClasses.worldwide__cases}>
                                     <FormControlLabel 
-                                        className={classes.country__label,classes.worldwide} 
+                                        className={styleClasses.worldwide} 
                                         value="worldwide"
                                         control={<Radio />} 
                                         label={<span style={{ fontSize: 20 }}>Worldwide</span>} 
                                     />
-                                    {/* <LanguageIcon fontSize="large"/> */}
                                     <span>
                                         ACTIVE: &nbsp;&nbsp;
                                         <CountUp

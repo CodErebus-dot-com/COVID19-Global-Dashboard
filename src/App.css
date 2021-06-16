@@ -1,25 +1,21 @@
-@import url("http://fonts.cdnfonts.com/css/archia");
+@font-face {
+  font-family: "Archia";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Archia"),
+    url("https://fonts.cdnfonts.com/s/19692/Archia-Regular.woff") format("woff");
+}
 
 * {
   margin: 0;
   /* background: #161625 !important;
   color: #bdbdbd !important; */
-  font-family: "Archia", sans-serif !important;
+  font-family: "Archia", Arial, sans-serif;
 }
 
 .app {
-  /* display: flex; */
-  /* justify-content: space-evenly; */
   margin: 2rem;
 }
-
-/* .app__top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 20px;
-  grid-template-areas: "parent_grid app__map";
-} */
 
 .grid-container {
   display: grid;
@@ -37,7 +33,6 @@
   grid-template-areas:
     "app__header"
     "app__stats"
-    /* "app__countryDisplay" */
     "app__graph";
   grid-area: grid1;
 }
@@ -52,11 +47,6 @@
   justify-content: space-between;
   height: 280px;
 }
-
-/* .app__countryDisplay {
-  grid-area: app__countryDisplay;
-  font-size: 26px;
-} */
 
 .app__overview {
   grid-area: app__graph;

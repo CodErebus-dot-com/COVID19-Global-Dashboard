@@ -38,14 +38,14 @@ const DoughnutChart = ({countryInfo}) => {
         }
       ];
 
-    let shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter);
+    let shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter());
     shadow.opacity = .5;
 
     // Create hover state
     let hoverState = pieSeries.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
 
     // Slightly shift the shadow and make it more prominent on hover
-    let hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
+    let hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter());
     hoverShadow.opacity = .7;
     hoverShadow.blur = 5;
 

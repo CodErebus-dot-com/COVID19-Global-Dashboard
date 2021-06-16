@@ -1,6 +1,7 @@
 import React from "react";
 import { Circle, Popup } from "react-leaflet";
 import CountUp from "react-countup"
+import {v4 as uuidv4} from 'uuid'
 
 const sortData = (data) => {
     const sortedData = [...data]
@@ -50,6 +51,7 @@ const showDataOnMap = (data, casesType="cases") =>
         Math.sqrt(country[casesType] / 10) *
         casesTypeColors[casesType].mulitiplier
       }
+      key={uuidv4()}
     >
       <Popup>
         <div className="info-container">
