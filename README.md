@@ -1,10 +1,27 @@
 Link to the web app: https://covid-19-tracker-58457.web.app/
 
+### `1. General Info of selected country`
+![Screenshot (229)](https://user-images.githubusercontent.com/85679479/122190382-6429ed00-ceaf-11eb-9c63-01f6a152e64d.png)
+
+### `2. Country Select/Search`
+![Screenshot (235)](https://user-images.githubusercontent.com/85679479/122191463-6476b800-ceb0-11eb-9255-a2dd117f30be.png)
+
+### `3. Map`
+![Screenshot (233)](https://user-images.githubusercontent.com/85679479/122191759-a1db4580-ceb0-11eb-916c-06d6a36cae4c.png)
+
+### `4. Visualizations`
+![Screenshot (231)](https://user-images.githubusercontent.com/85679479/122191928-ccc59980-ceb0-11eb-86c7-0ac72e05460e.png)
+
+### `5. Overview`
+![Screenshot (232)](https://user-images.githubusercontent.com/85679479/122192058-ebc42b80-ceb0-11eb-9445-45ff67a63f1c.png)
+
 This app is inspired from Clever Programmer's COVID19 Tracker Project on YT (https://www.youtube.com/watch?v=cF3pIMJUZxM).
 The data for the project has been taken from https://disease.sh/docs.
 A few extra graphs have been added for better visualization.
 The code is definitely not optimized and so there will be a litte lag here and there.
-The app is not complete yet, as a few more features are yet to be added.
+This app is neither responsive nor complete as of yet. 
+Other features and responsiveness will be added in the future updates...
+
 This app was built using React JS
 
 
