@@ -49,6 +49,6 @@ firebase.json
 #github config
 .github/
 
-#vscode config
-.vscode/
+# #vscode config
+# .vscode/
 
