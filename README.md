@@ -1,3 +1,4 @@
+***DISCLAIMER: The link below is the previous version fo the app. The link will be updated as soon as a major update is completed in the app***
 Link to the web app: https://covid-19-tracker-58457.web.app/
 
 ### `1. General Info of selected country`
