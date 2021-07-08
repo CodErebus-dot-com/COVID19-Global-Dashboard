@@ -1,5 +1,5 @@
 import React from 'react'
-import CountrySelect from './CountrySelect'
+import CountrySelect from './CountrySelect/CountrySelect'
 
 
 const Header = ({countries, country, onCountryChange, name, data, casesType}) => {

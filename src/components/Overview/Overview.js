@@ -1,6 +1,6 @@
 import React from 'react';
-import Report from './Report'
-import DoughnutChart from './DoughnutChart';
+import Report from './Report/Report'
+import DoughnutChart from './DoughnutChart/DoughnutChart';
 
 const Overview = ({countryInfo, country, vaccineInfo, vaccineDaily, vaccineTotal}) => {
   
