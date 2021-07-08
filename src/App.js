@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Header from './components/Header'
-import InfoBox from "./components/InfoBox";
-import Overview from './components/Overview'
-import DailySpreadTrends from "./components/DailySpreadTrends";
-import CummulativeSpreadTrends from './components/CummulativeSpreadTrends'
-import Map from "./components/Map";
+import Header from './components/Header/Header'
+import InfoBox from "./components/InfoBox/InfoBox";
+import Overview from './components/Overview/Overview'
+import DailySpreadTrends from "./components/SpreadTrends/DailySpreadTrends";
+import CummulativeSpreadTrends from './components/SpreadTrends/CummulativeSpreadTrends'
+import Map from "./components/Map/Map";
 import "leaflet/dist/leaflet.css"
 import { sortData } from "./utils";
 import Button from '@material-ui/core/Button';
