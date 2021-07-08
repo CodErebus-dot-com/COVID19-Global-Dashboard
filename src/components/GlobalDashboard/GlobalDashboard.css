@@ -1,0 +1,90 @@
+@font-face{
+    font-style: normal;
+    font-weight: 400;
+    font-family:"Archia";
+    src: local("Archia"),
+      url("https://dafonttop.com/wp-data/a/21/8021/file/archia-regular-webfont.ttf") format("woff"),
+      url("https://dafonttop.com/wp-data/a/21/8021/file/archia-regular-webfont.ttf") format("opentype"),
+      url("https://dafonttop.com/wp-data/a/21/8021/file/archia-regular-webfont.ttf") format("truetype");
+  }
+  * {
+    margin: 0;
+    /* background: #161625 !important;
+    color: #bdbdbd !important; */
+    font-family: "Archia", Arial, sans-serif;
+  }
+  
+  .app {
+    margin: 2rem;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 50px;
+    grid-template-areas: "grid1 grid2";
+  }
+  
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 0.4fr 1.5fr;
+    gap: 15px 0px;
+    grid-template-areas:
+      "app__header"
+      "app__stats"
+      "app__graph";
+    grid-area: grid1;
+  }
+  
+  .app__header {
+    grid-area: app__header;
+  }
+  
+  .app__stats {
+    grid-area: app__stats;
+    display: flex;
+    justify-content: space-between;
+    height: 280px;
+  }
+  
+  .app__overview {
+    grid-area: app__graph;
+  }
+  
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 1.4fr;
+    gap: 15px 0px;
+    grid-template-areas:
+      "app__map"
+      "app__graph";
+    grid-area: grid2;
+  }
+  
+  .app__map {
+    grid-area: app__map;
+  }
+  
+  .app__graph {
+    grid-area: app__graph;
+  }
+  
+  .app__lineGraph {
+    flex-grow: 1;
+    height: 225px;
+  }
+  
+  .app__overview {
+    margin-top: 2rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 990px) {
+    .app {
+      flex-direction: column;
+    }
+  }
+  
