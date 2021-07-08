@@ -1,11 +1,12 @@
-@font-face {
-  font-family: "Archia";
+@font-face{
   font-style: normal;
   font-weight: 400;
+  font-family:"Archia";
   src: local("Archia"),
-    url("https://fonts.cdnfonts.com/s/19692/Archia-Regular.woff") format("woff");
+    url("https://dafonttop.com/wp-data/a/21/8021/file/archia-regular-webfont.ttf") format("woff"),
+    url("https://dafonttop.com/wp-data/a/21/8021/file/archia-regular-webfont.ttf") format("opentype"),
+    url("https://dafonttop.com/wp-data/a/21/8021/file/archia-regular-webfont.ttf") format("truetype");
 }
-
 * {
   margin: 0;
   /* background: #161625 !important;
