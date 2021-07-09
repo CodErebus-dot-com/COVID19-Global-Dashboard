@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
-import App from '../../App'
+import GlobalDashboard from '../GlobalDashboard/GlobalDashboard'
 
 const LandingPage = () => {
     return (
@@ -11,7 +11,7 @@ const LandingPage = () => {
 
             <Switch>
                 <Route path="/global_dashboard">
-                    <App/>
+                    <GlobalDashboard/>
                 </Route>
             </Switch> 
         </Router>
@@ -19,4 +19,3 @@ const LandingPage = () => {
 }
 
 export default LandingPage
-
