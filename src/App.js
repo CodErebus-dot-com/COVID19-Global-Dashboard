@@ -1,6 +1,6 @@
 import React from 'react'
-import LandingPage from './components/LandingPage/LandingPage'
+import Routes from './Routes'
 
-const App = () => <LandingPage />
+const App = () => <Routes />
 
 export default App
