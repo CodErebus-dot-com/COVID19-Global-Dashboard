@@ -5,7 +5,7 @@ import {Button, Dialog, DialogActions, DialogContent, DialogTitle,
 import {Language, SearchRounded} from '@material-ui/icons';
 import CountUp from 'react-countup';
 import {v4 as uuidv4} from 'uuid'
-
+import covid19_icon from '../../../assets/imgs/covid19.png'
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -191,11 +191,11 @@ const CountrySelect = ({country, onCountryChange, data, casesType, name}) => {
                 
                 {
                     casesType === "cases" ? <span style={{color: "#CC1034", fontSize: "40px"}}>
-                        C<img src={process.env.PUBLIC_URL + './imgs/covid19.png'} style={{height: 50, width: 50, verticalAlign: "middle"}} alt="covid19 icon"/>VID19 {country}</span>  
+                        C<img src={covid19_icon} style={{height: 50, width: 50, verticalAlign: "middle"}} alt="covid19 icon"/>VID19 {country}</span>  
                     : (casesType === "recovered" ? <span style={{color: "#7DD71D", fontSize: "40px"}}>
-                        C<img src={process.env.PUBLIC_URL + './imgs/covid19.png'} style={{height: 50, width: 50, verticalAlign: "middle"}} alt="covid19 icon"/>VID19 {country}</span> 
+                        C<img src={covid19_icon} style={{height: 50, width: 50, verticalAlign: "middle"}} alt="covid19 icon"/>VID19 {country}</span> 
                     : <span style={{color: "gray", fontSize: "40px"}}>
-                        C<img src={process.env.PUBLIC_URL + './imgs/covid19.png'} style={{height: 50, width: 50, verticalAlign: "middle"}} alt="covid19 icon"/>VID19 {country}</span>)
+                        C<img src={covid19_icon} style={{height: 50, width: 50, verticalAlign: "middle"}} alt="covid19 icon"/>VID19 {country}</span>)
                 } 
                 
             </Button>

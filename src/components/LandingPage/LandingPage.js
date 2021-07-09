@@ -7,11 +7,13 @@ const LandingPage = () => {
             <div className="container">
                 <header>
                     <span>UR COVID-19 App</span>
+                    <nav>
+                        <ul>
+                            <li><a href="/global_dashboard">Global Dashboard</a></li>
+                        </ul>
+                    </nav>
                 </header>
-            </div>
-            
-            
-             
+            </div> 
         </>
     )
 }
