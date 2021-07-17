@@ -250,8 +250,8 @@ header .navbar ul li a:hover{
     text-align: left;
 }
 
-.symtoms .content ul .two{
-    padding-left: 4.5rem;
+.symtoms .content ul .one, .symtoms .content ul .three{
+    margin-left: 4.5rem;
 }
 
 .symtoms .content ul li{
