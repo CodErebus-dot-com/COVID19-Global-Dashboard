@@ -62,7 +62,7 @@ const LandingPage = () => {
 
                     <span>Covid-19</span>
                     <h3>stay safe, stay home</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores quibusdam ad sapiente quod harum recusandae esse voluptates repellat tempore.</p>
+                    <p>Do your part by staying home. Now is not the time for a play date for kids, not the time for a dinner for adults, and not the time for a personal visit to the elderly. Spring break plans should be cancelled, birthday parties should be postponed, extended family dinners should be suspended. Please, stay home.</p>
                     <a href="#" className="btn">protect now</a>
 
                 </div>
@@ -82,21 +82,21 @@ const LandingPage = () => {
                     <div className="box">
                         <img src={protect_1} alt=""/>
                         <h3>Wear A Face Mask</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ab magni consequatur, quae in repellat. Placeat deserunt vitae alias dignissimos!</p>
+                        <p>Masks should be used as part of a comprehensive strategy of measures to suppress transmission and save lives.</p>
                         <a href="#" className="btn">learn more</a>
                     </div>
 
                     <div className="box">
                         <img src={protect_2} alt=""/>
                         <h3>Wash Your Hands</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ab magni consequatur, quae in repellat. Placeat deserunt vitae alias dignissimos!</p>
+                        <p>You should wash your hands with soap and water for at least 20 seconds or use a hand sanitizer with at least 60% alcohol to clean hands.</p>
                         <a href="#" className="btn">learn more</a>
                     </div>
 
                     <div className="box">
                         <img src={protect_3} alt=""/>
                         <h3>Avoid Close Contact</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ab magni consequatur, quae in repellat. Placeat deserunt vitae alias dignissimos!</p>
+                        <p>While outside in public, make sure that you maintain a minimum distance of 6 feet with people around you.</p>
                         <a href="#" className="btn">learn more</a>
                     </div>
 
@@ -113,17 +113,25 @@ const LandingPage = () => {
                 
                 <div className="content">
                     <h1 className="heading">What Are The Main <span>Symptoms?</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos ex, magnam odit quaerat labore amet! Numquam obcaecati nobis possimus.</p>
+                    <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</p>
                     <ul>
+                        <div className="three">
+                            <span>Serious</span>
+                            <li>Chest pain</li>
+                            <li>Dypsnoea</li>
+                            <li>Loss of speech or movement</li>
+                        </div>
                         <div className="one">
+                            <span>Less Common</span>
+                            <li>Sore Throat</li>            
+                            <li>Diarrhoea</li>
+                            <li>Aches and Pains</li>
+                        </div>
+                        <div className="two">
+                            <span>Most Common</span>
                             <li>fever</li>
                             <li>Tiredness</li>
                             <li>Dry Cough</li>
-                        </div>
-                        <div className="two">
-                            <li>Sore Throat</li>            
-                            <li>Aches and Pains</li>
-                            <li>Shortness of Breath</li>
                         </div>
                     </ul>
                     <a href="#" className="btn">know more</a>
@@ -144,11 +152,13 @@ const LandingPage = () => {
 
                     <div className="content">
                         <h1 className="heading">things <span>not to do</span> during covid</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nulla, dolor excepturi repellendus officiis expedita saepe veniam minima adipisci tenetur?</p>
+                        <p>The internet is filled with information about covid19, many of it also wrong, causing panic among the people. Here are a few don'ts that you must try to avoid as musch as possible: </p>
                         <ul>
-                            <li>Do Not Share Eating</li>
+                            <li>Do Not go out in crowded places</li>
                             <li>Do Not Touch Your Face or Nose</li>
-                            <li>Do Not Contact Sick People</li>
+                            <li>Do Not believe everything on internet</li>
+                            <li>Do Not travel unless necessary</li>
+                            <li>Do Not seek alternative treatments</li>
                         </ul>
                     </div>
 
@@ -158,11 +168,13 @@ const LandingPage = () => {
 
                     <div className="content">
                         <h1 className="heading">things <span>to do</span> during covid</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nulla, dolor excepturi repellendus officiis expedita saepe veniam minima adipisci tenetur?</p>
+                        <p>If you think you may have been exposed to COVID-19, contact your doctor or healthcare provider. If you feel like you have minor symptoms, then here are a few do's that you must abide by:</p>
                         <ul>
-                            <li>Wash Your Hands For 20 sec</li>
-                            <li>Wear a Mask if Available</li>
-                            <li>Seek Medical Care Regularly</li>
+                            <li>Self isolate yourself and Stay home for 14 days</li>
+                            <li>Sanitize the areas that you touch</li>
+                            <li>Wear a Mask whenever in outdoors</li>
+                            <li>Keep using a thermometer and oxymeter</li>
+                            <li>Get rest and stay hydrated</li>
                         </ul>
                     </div>
 
@@ -235,8 +247,8 @@ const LandingPage = () => {
                 <div className="box-container">
 
                     <div className="box">
-                        <h3>about us</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio rerum explicabo impedit aperiam non quod. Velit sunt voluptatem nemo beatae.</p>
+                        <h3>about me</h3>
+                        <p>I am an upcoming front-end developer (hopefully) and made this site to have some fun with React and some third-party libraries.</p>
                     </div>
 
                     <div className="box">
@@ -264,7 +276,7 @@ const LandingPage = () => {
                         <h3>contact info</h3>
                         <p> <i className="fas fa-phone"></i> +123-456-7890. </p>
                         <p> <i className="fas fa-envelope"></i> example@gmail.com </p>
-                        <p> <i className="fas fa-map-marker-alt"></i> mumbai, indai - 400104. </p>
+                        <p> <i className="fas fa-map-marker-alt"></i> mumbai, India - 40008 </p>
                         <div className="share">
                             <a href="#" className="fab fa-youtube"></a>
                             <a href="#" className="fab fa-facebook-f"></a>
