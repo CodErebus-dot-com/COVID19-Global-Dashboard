@@ -58,17 +58,18 @@ const LandingPage = () => {
 
             <section className="home" id="home">
 
-                <div className="content">
-
-                    <span>Covid-19</span>
-                    <h3>stay safe, stay home</h3>
-                    <p>Do your part by staying home. Now is not the time for a play date for kids, not the time for a dinner for adults, and not the time for a personal visit to the elderly. Spring break plans should be cancelled, birthday parties should be postponed, extended family dinners should be suspended. Please, stay home.</p>
-                    <a href="#" className="btn">protect now</a>
-
-                </div>
+                
 
                 <div className="image">
-                    <img src={home} alt="" />
+                    {/* <img src={home} alt="" /> */}
+                </div>
+                <div className="content">
+
+                    <h2>Prevention from coronavirus</h2>
+                    <p>stay home, stay safe</p>
+                    {/* <p>Do your part by staying home. Now is not the time for a play date for kids, not the time for a dinner for adults, and not the time for a personal visit to the elderly. Spring break plans should be cancelled, birthday parties should be postponed, extended family dinners should be suspended. Please, stay home.</p> */}
+                    <a href="#" className="btn">protect now</a>
+
                 </div>
 
             </section>
