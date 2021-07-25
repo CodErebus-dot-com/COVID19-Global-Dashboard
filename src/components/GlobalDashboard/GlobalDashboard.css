@@ -71,6 +71,20 @@
   margin-top: 2rem;
 }
 
+.graph--heading{
+  font-size: 40px !important;
+  color: #6c757d;
+  display: flex; 
+  justify-content: center;
+}
+
+.overview--heading{
+  font-size: 40px !important;
+  color: #6c757d;
+  display: flex; 
+  justify-content: center;
+}
+
 /* Media Queries */
 @media (max-width: 990px) {
   .app {
