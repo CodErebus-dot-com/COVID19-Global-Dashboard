@@ -27,9 +27,9 @@ const LandingPage = () => {
         <>
             <header>
 
-            <a href="#" className="logo">c<span><img src={covid19} alt="" style={{height: "4rem"}}/></span>VID - 19</a>
+            <a href="#" className="logo">c<span><img src={covid19} alt="" style={{height: "2rem"}}/></span>VID - 19</a>
 
-            <div id="menu" className="fas fa-bars"></div>
+            <div id="menu" className="fas fa-bars"><i class="fas fa-bars"></i></div>
 
             <nav className="navbar">
                 <ul>
