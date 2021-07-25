@@ -64,15 +64,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         marginBottom: "2rem"
-    },
-    span: {
-        fontSize: "40px !important",
-    },
-    flag: {
-        height: "30px !important",
-        width: "50px !important"
-    }    
-    
+    } 
     
 }));
 
@@ -194,14 +186,15 @@ const CountrySelect = ({country, onCountryChange, data, casesType, name}) => {
     return (
         <>
             <Button className={styleClasses.country__header} variant="contained" onClick={handleClickOpen}>
-                {country === "worldwide" ? <Language fontSize="large"/> : <img src={flag} className={styleClasses.flag} alt="Country Flag"/>}
+                {country === "worldwide" ? <Language fontSize="large"/> : <img src={flag} className={styleClasses.flag} style={{height: "30px",
+        width: "50px"}}alt="Country Flag"/>}
                 
                 {
-                    casesType === "cases" ? <span className={styleClasses.span} style={{color: "#CC1034"}}>
+                    casesType === "cases" ? <span className={styleClasses.span} style={{color: "#CC1034", fontSize: "40px"}}>
                         C<img src={covid19_icon} style={{height: 50, width: 50, verticalAlign: "middle"}} alt="covid19 icon"/>VID19 {country}</span>  
-                    : (casesType === "recovered" ? <span className={styleClasses.span} style={{color: "#7DD71D"}}>
+                    : (casesType === "recovered" ? <span className={styleClasses.span} style={{color: "#7DD71D", fontSize: "40px"}}>
                         C<img src={covid19_icon} style={{height: 50, width: 50, verticalAlign: "middle"}} alt="covid19 icon"/>VID19 {country}</span> 
-                    : <span className={styleClasses.span} style={{color: "gray"}}>
+                    : <span className={styleClasses.span} style={{color: "gray", fontSize: "40px"}}>
                         C<img src={covid19_icon} style={{height: 50, width: 50, verticalAlign: "middle"}} alt="covid19 icon"/>VID19 {country}</span>)
                 } 
                 
