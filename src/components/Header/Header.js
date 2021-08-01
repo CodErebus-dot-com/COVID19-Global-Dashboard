@@ -6,8 +6,6 @@ const Header = ({countries, country, onCountryChange, name, data, casesType}) =>
     
     return (
         <>
-            {/* <h1>COVID-19 Tracker</h1> */}
-            {/* <FormControl className="app__dropdown"> */}
             <CountrySelect 
                 countries={countries} 
                 country={country} 
@@ -16,10 +14,6 @@ const Header = ({countries, country, onCountryChange, name, data, casesType}) =>
                 data={data}
                 casesType={casesType}
             />
-            
-            
-            
-            {/* </FormControl> */}
         </>
     )
 }
